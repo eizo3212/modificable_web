@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="theme-color" content="#F0DB4F">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="shortcut icon" type="image/png" href="./img/ProgramadorFitness.png">
+    <link rel="apple-touch-icon" href="./ProgramadorFitness.png">
+    <link rel="apple-touch-startup-image" href="./ProgramadorFitness.png">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <form method="post" action="login.php"  class="box"> 
+                    <h1>Login</h1>
+                    <p class="text-muted"> Please enter your login and password!</p> 
+                    <input type="text" name="user" placeholder="Username"> 
+                    <input type="password" name="pass" placeholder="Password"> 
+                    <a class="forgot text-muted" href="#">Forgot password?</a> 
+                    <input type="submit" name="login" value="Login">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+        navigator.serviceWorker.register('worker.js?'+Math.random()+'')
+    });
+    }
+</script>
+</body>
+</html>
